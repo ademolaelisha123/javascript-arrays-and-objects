@@ -39,10 +39,9 @@ function submitItem() {
             show.innerHTML += `<td><p>${i+1}.${cart[i]}</p></td>`
             
         }
-        table += `</tr>`
+       
     }
-    table+=`</table>`
-show.innerHTML = table
+    
 }
 
 function firstButton() {
@@ -109,6 +108,9 @@ function fourthbutton() {
    var getnumber = Number(prompt("which number did you want to delete"))
    cart.splice(getnumber-1, 1)
    displaycart()
+   if (getnumber == 0) {
+    
+   }
 }
 
 function displaycart() {
